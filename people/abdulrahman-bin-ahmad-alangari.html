@@ -57,14 +57,27 @@
       border-radius: 8px;
       white-space: pre-line;
     }
-    .poem {
+    .poem-box {
       background: #fffdf8;
       border: 1px solid #ddd;
-      padding: 18px;
+      padding: 22px;
       margin: 20px 0;
       border-radius: 8px;
-      white-space: pre-line;
-      font-size: 17px;
+      font-size: 18px;
+      line-height: 2.2;
+    }
+    .bayt {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      border-bottom: 1px dotted #ddd;
+      padding: 6px 0;
+    }
+    .sadr {
+      text-align: right;
+    }
+    .ajz {
+      text-align: right;
     }
     img.document {
       max-width: 100%;
@@ -90,6 +103,12 @@
       text-align: center;
       padding: 20px;
       color: #666;
+    }
+    @media (max-width: 700px) {
+      .bayt {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
     }
   </style>
 </head>
@@ -195,23 +214,93 @@
 
   <section>
     <h2>شعره ومراسلاته</h2>
-    <div class="poem">ألا أيها الراعي عليك سلاميا		سلامًا من الأعماق عذبًا وصافيا
-وحبٌ من الإيمان تسقى جذوره		وطودًا وطود الشامخات الرواسيـا
-يقول الفتى المنكوب من قول مفتر		ستبلى ستور الظلم لو كان عاليا
-إذا السحب قد حالت عن الشمس أن تُرى		وهبت رياح عاصفات عواتيا
-تذكرت قول الله في خير محكم		مع العسر يسر فاستنار ابتهاليا
-وأبصرت خلاقًا شديد عقابه		عليم بمكنون وإن كان خافيا
-وأيقنت أن الله لابد ناصري		مسقٍ قليل الحلم سم الأفاعيا
-لقد خلت عن الغي من النذل ما جرى		وقلت لنفسي إن ظني لخاطيا
-وأملت في طود بعيد مناله		كريم إذا أعطى وبالوعد وافيا
-فأكرم به نفسًا وأكبر به أبًا		وأعزز به عونًا وبالعدل قاضيا
-فلا أعدم الأبناء من فيض عدلكم		فذا الابن مولى وذا الأب واليا
-ألا أيها الشهم الذي من سلالة		أنارت بها الأنحاء مقيمًا وباديا
-وصدوا زحوف الشرك لما تكاثرت		فذل بفضل الله كيد الأعاديـا
-فيا أيها الركن الذي لك في الورى		سطور من الأمجاد دومًا بواقيا
-فهذا مقال قد روى الابن سطره		على صفحة بيضاء والله داعيا
-بأن ينصر الإسلام دومًا وأهله		وأن يخذل الأعداء والله كافيا
-صلاة على المختار طه وأهله		وصحبًا له في المجد أعلى المعاليا</div>
+
+    <div class="poem-box">
+      <div class="bayt">
+        <div class="sadr">ألا أيها الراعي عليك سلاميا</div>
+        <div class="ajz">سلامًا من الأعماق عذبًا وصافيا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">وحبٌ من الإيمان تسقى جذوره</div>
+        <div class="ajz">وطودًا وطود الشامخات الرواسيـا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">يقول الفتى المنكوب من قول مفتر</div>
+        <div class="ajz">ستبلى ستور الظلم لو كان عاليا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">إذا السحب قد حالت عن الشمس أن تُرى</div>
+        <div class="ajz">وهبت رياح عاصفات عواتيا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">تذكرت قول الله في خير محكم</div>
+        <div class="ajz">مع العسر يسر فاستنار ابتهاليا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">وأبصرت خلاقًا شديد عقابه</div>
+        <div class="ajz">عليم بمكنون وإن كان خافيا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">وأيقنت أن الله لابد ناصري</div>
+        <div class="ajz">مسقٍ قليل الحلم سم الأفاعيا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">لقد خلت عن الغي من النذل ما جرى</div>
+        <div class="ajz">وقلت لنفسي إن ظني لخاطيا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">وأملت في طود بعيد مناله</div>
+        <div class="ajz">كريم إذا أعطى وبالوعد وافيا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">فأكرم به نفسًا وأكبر به أبًا</div>
+        <div class="ajz">وأعزز به عونًا وبالعدل قاضيا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">فلا أعدم الأبناء من فيض عدلكم</div>
+        <div class="ajz">فذا الابن مولى وذا الأب واليا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">ألا أيها الشهم الذي من سلالة</div>
+        <div class="ajz">أنارت بها الأنحاء مقيمًا وباديا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">وصدوا زحوف الشرك لما تكاثرت</div>
+        <div class="ajz">فذل بفضل الله كيد الأعاديـا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">فيا أيها الركن الذي لك في الورى</div>
+        <div class="ajz">سطور من الأمجاد دومًا بواقيا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">فهذا مقال قد روى الابن سطره</div>
+        <div class="ajz">على صفحة بيضاء والله داعيا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">بأن ينصر الإسلام دومًا وأهله</div>
+        <div class="ajz">وأن يخذل الأعداء والله كافيا</div>
+      </div>
+
+      <div class="bayt">
+        <div class="sadr">صلاة على المختار طه وأهله</div>
+        <div class="ajz">وصحبًا له في المجد أعلى المعاليا</div>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -234,7 +323,7 @@
 
   <section>
     <h2>صورة غلاف المصدر</h2>
-    <img class="document" src="../images/books/al-tahqiq-ulama-al-hilwah-cover.png" alt="غلاف كتاب التحقيق في علماء الحلوة وحوطة بني تميم ونعام والحريق">
+    <img class="document" src="../images/books/al-tahqiq-ulama-al-hilwah-cover.jpg" alt="غلاف كتاب التحقيق في علماء الحلوة وحوطة بني تميم ونعام والحريق">
   </section>
 
   <section>
